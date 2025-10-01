@@ -811,8 +811,8 @@ static void MX_TIM4_Init(void)
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
  8000752:	2360      	movs	r3, #96	@ 0x60
  8000754:	607b      	str	r3, [r7, #4]
-  sConfigOC.Pulse = 4118;
- 8000756:	f241 0316 	movw	r3, #4118	@ 0x1016
+  sConfigOC.Pulse = 4119;
+ 8000756:	f241 0317 	movw	r3, #4119	@ 0x1017
  800075a:	60bb      	str	r3, [r7, #8]
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
  800075c:	2300      	movs	r3, #0
@@ -865,8 +865,8 @@ static void MX_TIM4_Init(void)
     Error_Handler();
  80007ae:	f000 f935 	bl	8000a1c <Error_Handler>
   }
-  sConfigOC.Pulse = 5419;
- 80007b2:	f241 532b 	movw	r3, #5419	@ 0x152b
+  sConfigOC.Pulse = 5420;
+ 80007b2:	f241 532c 	movw	r3, #5420	@ 0x152c
  80007b6:	60bb      	str	r3, [r7, #8]
   if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
  80007b8:	1d3b      	adds	r3, r7, #4
